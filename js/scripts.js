@@ -1,13 +1,17 @@
-let myName = 'Test';
-document.write(myName);
-myName = 'John Doe';
-document.write(myName);
+let pokemonList = [
+    {
+        name: "Bulbasaur",
+        height: 7,
+        types: ["grass", "water"]
+    }, {
+        name: "Pidgey",
+        height: 0.3,
+        types: ["air", "grass"]
+    }, {
+        name: "Poliwhirl",
+        height: 1,
+        types: ["ice", "steel"]
+    }
+];
 
-
-
-let size = 100;
-let doubleSize = size * 2;
-let minSize = (doubleSize * 2) - (size / 2);
-document.write(minSize);
-
-alert('Hello world')
+console.log(pokemonList)
