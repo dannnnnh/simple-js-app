@@ -25,10 +25,31 @@ const pokemonRepository = (function () {
     }
 
 
-    return {getAll: getAll, add: add}
+    function addListItem(pokemon) {
+        let pokemonContainer = document.querySelector("ul.pokemon-list");
+        let listItem = document.createElement("li");
+        let button = document.createElement("button");
 
+        button.innerText = pokemon.name;
+        button.classList.add("btn");
+
+        button.addEventListener('click', function (event) {
+            console.log(pokemon);
+
+        });
+
+        listItem.appendChild(button);
+        pokemonContainer.appendChild(listItem);
+    }
+
+    return {getAll: getAll, add: add, addListItem: addListItem}
 
 })();
+
+
+pokemonRepository.getAll().forEach(pokemon => {
+    pokemonRepository.addListItem(pokemon);
+})
 
 
 // For loop goes through each item in the list and prints the name and height to the DOM with spaces
@@ -37,19 +58,3 @@ const pokemonRepository = (function () {
 //     if (pokemonList[i].height > 5) {
 //         size = "Large scale pokemon!";
 //     }
-
-document.write("<h1>" + "Pokemon List" + "</h1>");
-
-pokemonRepository.getAll().forEach(pokemon => {
-    let size = "";
-    if (pokemon.height > 5) {
-        size = "Large scale pokemon!"
-    }
-    document.write("<h2>" + pokemon.name + "</h2>");
-    document.write("<p>" + " Height: " + "<b>" + pokemon.height + "</b>" + " " + size + "</p>");
-
-
-    // Write title, List of names, heights and extra copy if the pokemon is large scale
-
-
-})
