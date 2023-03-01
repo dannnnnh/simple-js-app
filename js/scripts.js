@@ -22,7 +22,9 @@ const pokemonRepository = (function () {
     pokemonRepository.loadDetails(pokemon).then(function () {
       const $row = $(".row");
 
-      const $card = $('<div class="card" style="width:400px"></div>');
+      const $card = $(
+        '<div class="card col-md-4 col-lg-3 col-sm-6" style="width:400px"></div>'
+      );
       const $image = $(
         '<img class="card-img-top" alt="Card image" style="width:20%" />'
       );
@@ -126,12 +128,12 @@ const pokemonRepository = (function () {
   }
 
   return {
-    add: add,
-    getAll: getAll,
-    addListItem: addListItem,
-    loadList: loadList,
-    loadDetails: loadDetails,
-    showModal: showModal,
+    add,
+    getAll,
+    addListItem,
+    loadList,
+    loadDetails,
+    showModal,
   };
 })();
 pokemonRepository.loadList().then(function () {

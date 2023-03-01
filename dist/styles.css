@@ -1,1 +1,1 @@
-body {}.row{margin: 16px;}.card {margin: 16px;position: relative;display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;min-width: 0;word-wrap: break-word;background-color: white;background-clip: border-box;border: 1px solid rgba(0, 0, 0, 0.125);border-radius: 0.5rem;}
+*{margin:none;padding:none;box-sizing:border-box}.card{min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.5rem;margin-left:auto;margin-right:auto}
