@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Project description:
 This project is a JavaScript application that allows users to view a list of 20 Pokémon and their details, such as their height, weight, abilities, and types. The application uses the PokeAPI to fetch and display the data.
 
