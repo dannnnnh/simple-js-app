@@ -25,7 +25,6 @@ pokeapi API
 
 Which API the project uses:
 https://pokeapi.co/api/v2/pokemon/?limit=20
-=======
+
 # simple-js-app
 Learn-javascript
->>>>>>> b512d6072e008d2f086b1f625441359399c66901
