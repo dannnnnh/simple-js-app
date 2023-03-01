@@ -23,8 +23,8 @@ Project dependencies:
 jQuery library
 pokeapi API
 
-Which API the project uses:
+API:
 https://pokeapi.co/api/v2/pokemon/?limit=20
 
-# simple-js-app
+# simple-js-app*
 Learn-javascript
